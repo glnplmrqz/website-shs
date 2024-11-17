@@ -1,0 +1,390 @@
+*,:active {
+	outline: none;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	margin: 20px;
+	background: #2a5298;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	font-size: 96.5%;
+}
+
+h1, h2, h3, h4, h5, p {
+	margin-bottom: 10px;
+}
+
+p {
+	line-height: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #b12bff;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.animate {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+/* Common responsive adjustments */
+.calendar {
+    position: relative;
+    left: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    top: auto;
+    max-width: 800px;
+    width: 95%;
+    height: auto;
+    min-height: 500px;
+}
+
+
+.calendar h1, .calendar h2 {
+	background-color: #292626f8;
+	display: block;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.calendar h1 span {
+	display: block;
+}
+
+.calendar .col {
+	position: relative;
+	float: left;
+	height: 100%;
+}
+
+.calendar .col .content {
+	padding: 40px;
+}
+
+.calendar ul {
+	margin: 0;
+}
+
+.calendar ul li {
+	list-style: none;
+}
+
+.calendar .leftCol {
+	width: 40%;
+	background-color: #292626f8;
+}
+
+.calendar .noteList li {
+	color: #ffffff;
+	margin-top: 50px;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.calendar .rightCol {
+	width: 60%;
+}
+
+.calendar .rightCol h2 {
+	color: #C7BEBE;
+	text-align: center;
+	margin-bottom: 50px;
+	padding: 2% 2%;
+}
+
+.calendar .months li,
+.calendar .weekday li,
+.calendar .days li {
+	float: left;
+	text-transform: uppercase;
+}
+
+.calendar .months li a,
+.calendar .weekday li a,
+.calendar .days li a {
+	display: block;
+	color: #fff;
+}
+
+.calendar .months li a {
+	font-size: 13px;
+	color: #C7BEBE;
+	text-align: center;
+	width: 32px;
+	margin-bottom: 20px;
+}
+
+.calendar .months li .selected {
+	font-weight: bold;
+	color: yellow;
+}
+
+.calendar .weekday li a {
+	width: 55px;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.calendar .days li {
+	width: 55px;
+}
+
+.calendar .days li a {
+    width: 36px;
+    height: 36px; /* Ensure a perfect circle */
+    line-height: 36px; /* Center-align the text vertically */
+    text-align: center; /* Center-align the text horizontally */
+    margin: 0 auto 10px auto; /* Center the circle and add bottom margin */
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%; /* Make it a circle */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+}
+
+.calendar .days li a:hover {
+    background-color: #EEEDE9;
+    color: #000;
+}
+
+.calendar .days li .selected {
+    background-color: #ca6cc2 !important;
+    color: #000!important;
+}
+
+.calendar .days li .event {
+	color: yellow;
+}
+
+.calendar .days li .previous {
+	color: khaki;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.header h1 {
+	font-size: 50px;
+	color: khaki;
+	margin: 0;
+}
+
+*,:active {
+	outline: none;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	margin: 20px;
+	background: #2a5298;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	font-size: 96.5%;
+}
+
+h1, h2, h3, h4, h5, p {
+	margin-bottom: 10px;
+}
+
+p {
+	line-height: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #b12bff;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.animate {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.calendar {
+	position: absolute;
+	border-radius: 4px;
+	overflow: hidden;
+	width: 800px;
+	height: 500px;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -225px;
+	top: 52%;
+	background-color: #121212;
+	color: #ffffff;
+}
+
+.calendar h1, .calendar h2 {
+	background-color: #292626f8;
+	display: block;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.calendar h1 span {
+	display: block;
+}
+
+.calendar .col {
+	position: relative;
+	float: left;
+	height: 100%;
+}
+
+.calendar .col .content {
+	padding: 40px;
+}
+
+.calendar ul {
+	margin: 0;
+}
+
+.calendar ul li {
+	list-style: none;
+}
+
+.calendar .leftCol {
+	width: 40%;
+	background-color: #292626f8;
+}
+
+.calendar .noteList li {
+	color: #ffffff;
+	margin-top: 50px;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.calendar .rightCol {
+	width: 60%;
+}
+
+.calendar .rightCol h2 {
+	color: #C7BEBE;
+	text-align: center;
+	margin-bottom: 50px;
+	padding: 2% 2%;
+}
+
+.calendar .months li,
+.calendar .weekday li,
+.calendar .days li {
+	float: left;
+	text-transform: uppercase;
+}
+
+.calendar .months li a,
+.calendar .weekday li a,
+.calendar .days li a {
+	display: block;
+	color: #fff;
+}
+
+.calendar .months li a {
+	font-size: 13px;
+	color: #C7BEBE;
+	text-align: center;
+	width: 32px;
+	margin-bottom: 20px;
+}
+
+.calendar .months li .selected {
+	font-weight: bold;
+	color: yellow;
+}
+
+.calendar .weekday li a {
+	width: 55px;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.calendar .days li {
+	width: 55px;
+}
+
+.calendar .days li a {
+    width: 36px;
+    height: 36px; /* Ensure a perfect circle */
+    line-height: 36px; /* Center-align the text vertically */
+    text-align: center; /* Center-align the text horizontally */
+    margin: 0 auto 10px auto; /* Center the circle and add bottom margin */
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%; /* Make it a circle */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+}
+
+.calendar .days li a:hover {
+    background-color: #EEEDE9;
+    color: #000;
+}
+
+.calendar .days li .selected {
+    background-color: #ca6cc2 !important;
+    color: #000!important;
+}
+
+.calendar .days li .event {
+	color: yellow;
+}
+
+.calendar .days li .previous {
+	color: khaki;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.header h1 {
+	font-size: 50px;
+	color: khaki;
+	margin: 0;
+}

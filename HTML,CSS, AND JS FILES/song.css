@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #2a5298;
+}
+
+.center-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.center-image img {
+    width: 200px;
+}
+
+.audio-container {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.lyrics-table {
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    margin: 5px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lyrics-table h1 {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.lyrics-table p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.see-more-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.see-more-btn:hover {
+    background-color: #45a049;
+}
+
+.see-more-btn:focus {
+    outline: none;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+    .lyrics-table {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .lyrics-table h1 {
+        font-size: 22px;
+    }
+
+    .lyrics-table p {
+        font-size: 16px;
+    }
+
+    .see-more-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .center-image img {
+        width: 150px;
+    }
+}
+
+/* Media Query for smaller screens (e.g., smartphones in portrait mode) */
+@media (max-width: 480px) {
+    .lyrics-table {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .lyrics-table h1 {
+        font-size: 20px;
+    }
+
+    .lyrics-table p {
+        font-size: 14px;
+    }
+
+    .see-more-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .center-image img {
+        width: 120px;
+    }
+}

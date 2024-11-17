@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #2a5298;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* Container for Cards */
+.container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 100%; 
+    max-width: 1200px;
+}
+
+/* Card Styling */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 300px;
+    padding: 1.5rem;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Headings Styling */
+.card h1 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+}
+
+/* Information Section Styling */
+.info {
+    text-align: left;
+}
+
+.info p {
+    line-height: 1.6;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.info p strong {
+    color: #007bff;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 2rem);
+        margin: 0 auto;
+    }
+
+    .card h1 {
+        font-size: 1.3rem;
+    }
+
+    .info p {
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 1rem; 
+    }
+
+    .card h1 {
+        font-size: 1.2rem;
+    }
+
+    .info p {
+        font-size: 0.8rem; 
+    }
+}

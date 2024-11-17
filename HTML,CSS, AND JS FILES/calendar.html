@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="../IMAGES/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="calendar.css" />
+	<link rel="stylesheet" href="sidebar.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet" />
+	<title>CALENDAR</title>
+</head>
+
+<body>
+	<nav id="sidebar">
+		<div class="sidebar-header">
+			<a href="webpage.html"><img src="../IMAGES/logo.png" /></a>
+			<button id="closeBtn" type="button"></button>
+		</div>
+		<ul class="sidebar-nav">
+			<li><a href="profile.html">Profile</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="music.html">Music</a></li>
+			<li><a href="vlogs.html">Vlogs</a></li>
+			<li><a href="news.html">News</a></li>
+			<li><a href="about us.html">About</a></li>
+			<li><a href="../index.html">Logout</a></li>
+		</ul>
+	</nav>
+	<button id="sidebarCollapse">&#9776;</button>
+	<div class="header">
+		<h1>SHA TEA TEAM CALENDAR & BIRTHDAYS</h1>
+	</div>
+	<div class="header">
+        <h1>SHA TEA TEAM</h1>
+    </div>
+    <div class="calendar">
+        <div class="leftCol col">
+            <div class="content">
+                <h1 id="current" class="date">Select a date</h1>
+                <div class="notes">
+                    <ul class="noteList">
+                        <li id="notes">Nothing for today</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rightCol col">
+            <div class="content">
+                <h2 class="year">CALENDAR YEAR 2022</h2>
+                <ul id="month" class="months clearfix"></ul>
+                <ul class="weekday clearfix">
+                    <li><a href="#" title="Sun">Sun</a></li>
+                    <li><a href="#" title="Mon">Mon</a></li>
+                    <li><a href="#" title="Tue">Tue</a></li>
+                    <li><a href="#" title="Wed">Wed</a></li>
+                    <li><a href="#" title="Thu">Thu</a></li>
+                    <li><a href="#" title="Fri">Fri</a></li>
+                    <li><a href="#" title="Sat">Sat</a></li>
+                </ul>
+                <ul id="day" class="days clearfix"></ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+	<script src="calendar.js"></script>
+	<script src="sidebar.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #2a5298;
+    min-height: 100vh;
+    display: flex;
+}
+
+/* Content Styles */
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: khaki;
+    margin-bottom: 2rem;
+}
+
+.header h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 600;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+
+.column {
+    flex: 0 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.column img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .column img {
+        width: 100%;
+        height: 330px;
+    }
+
+    #content.active {
+        margin-left: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .column img {
+        height: 260px;
+    }
+}
+
+/* Ensure horizontal scrolling is disabled on mobile */
+@media screen and (max-width: 768px) {
+    .row {
+        overflow-x: hidden;
+    }
+}
