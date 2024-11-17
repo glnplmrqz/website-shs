@@ -388,3 +388,56 @@ a {
 	color: khaki;
 	margin: 0;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .calendar {
+        width: 95%;
+        height: auto;
+        margin: 15px auto;  /* Center it horizontally with auto margins */
+        position: relative;
+        left: 0;  /* Remove any offset */
+        right: 0;  /* Remove any offset */
+        top: 0;  /* Keep it within the normal flow of the page */
+    }
+
+    .calendar .leftCol,
+    .calendar .rightCol {
+        width: 100%;
+        float: none;
+    }
+
+    .calendar .leftCol {
+        padding-bottom: 20px;
+    }
+
+    .calendar .col .content {
+        padding: 20px;
+    }
+
+    .calendar h1, .calendar h2 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .calendar .noteList li {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    .calendar .days li {
+        width: 40px;
+    }
+
+    .calendar .days li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+
+    .calendar .weekday li a {
+        width: 40px;
+        font-size: 12px;
+    }
+}
