@@ -1,7 +1,8 @@
 # SHS Website Project
 
-![Website Preview] <img width="1366" height="730" alt="image" src="https://github.com/user-attachments/assets/9c7dc350-3d63-4220-818a-329d631388c6" />
-![Website Preview] <img width="1366" height="730" alt="image" src="https://github.com/user-attachments/assets/e2ff784d-7517-4caf-913d-39cb8504b18f" />
+**WEBSITE PREVIEW**
+<img width="1366" height="730" alt="image" src="https://github.com/user-attachments/assets/9c7dc350-3d63-4220-818a-329d631388c6" />
+<img width="1366" height="730" alt="image" src="https://github.com/user-attachments/assets/e2ff784d-7517-4caf-913d-39cb8504b18f" />
 
 A responsive website project for the Asian Institute of Computer Studies (AICS) - Montalban Branch Senior High School (SHS) department. Built as a practice project to demonstrate web development skills.
 
