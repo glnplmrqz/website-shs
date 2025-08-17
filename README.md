@@ -24,8 +24,8 @@ A responsive website project for the Asian Institute of Computer Studies (AICS) 
 3. Install live server extension in VS Code
 4. Start the live server
 5. For login, use:
-- Username: shateateam
-- Password: 12345
+- **Username: shateateam**
+- **Password: 12345**
 
 📝 Notes
 - Created as part of school project.
