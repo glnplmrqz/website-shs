@@ -1,6 +1,6 @@
 # SHS Website Project
 
-**WEBSITE PREVIEW**
+## 💻 WEBSITE PREVIEW
 <img width="1366" height="730" alt="image" src="https://github.com/user-attachments/assets/9c7dc350-3d63-4220-818a-329d631388c6" />
 <img width="1366" height="730" alt="image" src="https://github.com/user-attachments/assets/e2ff784d-7517-4caf-913d-39cb8504b18f" />
 
@@ -23,6 +23,9 @@ A responsive website project for the Asian Institute of Computer Studies (AICS) 
 2. Open index.html in your browser (For development:)
 3. Install live server extension in VS Code
 4. Start the live server
+5. For login, use:
+- Username: shateateam
+- Password: 12345
 
 📝 Notes
 - Created as part of school project.
